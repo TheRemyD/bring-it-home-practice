@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 75%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section {
+  width: 75%;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+label {
+  display: block;
+  margin-block: 0.5rem;
+}
+
+input {
+  text-align: right;
+  width: 10ch;
+}
+
+.btn {
+  padding: 0.25rem 1rem;
+  background: rgb(21, 138, 118);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}

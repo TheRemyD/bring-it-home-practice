@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is where your description goes">
+		<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/main.js" defer></script>
+	</head>
+	<body>
+
+		<!-- Buttons to choose which homework to view -->
+		<main>
+			<a class="btn createVariable" href="#">Create a variable</a>
+			<a class="btn addTen" href="#">add 10 to a Variable</a>
+			<a class="btn differences" href="#">Subtract 4 Numbers</a>
+			<a class="btn divide" href="#">Divide 2 Numbers</a>
+			<a class="btn jumanji" href="#">Jumanji</a>
+			<a class="btn zebra" href="#">Zebra</a>
+		</main>
+
+		<!-- Creates a variable and stores a value -->
+		<section class="inputFunctions">
+			<section class="createVariable__cont">
+				<label id="createVariable__name" for="createVariable__name--input">
+					Please create a variable name:
+					<input id="createVariable__name--input" type="text">
+				</label>
+				<label id="createVariable__value" for="createVariable__value--input">
+					Please enter a value for your variable:
+					<input id="createVariable__value--input" type="text">
+				</label>
+				<a id="createVariable__btn" class="btn" href="#">Submit</a>
+			</section>
+
+			<!-- Adds 10 to a number -->
+			<section class="addTen__cont">
+				<label id="addTen__value" for="addTen__value--input">
+					Please enter a number:
+					<input id="addTen__value--input" type="text">
+				</label>
+				<a href="#" id="addTen__btn" class="btn">Add 10</a>
+			</section>
+
+			<!-- Finds the difference of four numbers -->
+			<section class="differences__cont">
+				<label id="differences__name" for="differences__name--input">
+					Please enter 4 numbers (Separated by a space):
+					<input id="differences__name--input" type="text">
+				</label>
+				<a id="differences__btn" class="btn" href="#">Submit</a>
+			</section>
+
+			<!-- Find the Remainder -->
+			<section class="divide__cont">
+				<label id="divide__name" for="divide__name--input">
+					Please enter 2 numbers(Separated by a space):
+					<input id="divide__name--input" type="text">
+				</label>
+				<a id="divide__btn" class="btn" href="#">Submit</a>
+			</section>
+
+
+			<!-- Jumanji- Take in 2 numbers and if their sum is greater than 50 display Jumanji -->
+			<section class="jumanji__cont">
+				<label id="jumanji__name" for="jumanji__name--input">
+					Please enter 2 numbers(Separated by a space):
+					<input id="jumanji__name--input" type="text">
+				</label>
+				<a id="jumanji__btn" class="btn" href="#">Submit</a>
+			</section>
+
+			<!-- Zebra- take in 3 numbers, multiply them, if modulus 3 is zero then display zebra -->
+			<section class="zebra__cont">
+				<label id="zebra__name" for="zebra__name--input">
+					Please enter 3 numbers(Separated by a space):
+					<input id="zebra__name--input" type="text">
+				</label>
+				<a id="zebra__btn" class="btn" href="#">Submit</a>
+			</section>
+
+			<!-- Shows the results of whatever homework is being viewed -->
+			<span id="result"></span>
+		</section>
+	</body>
+</html>
